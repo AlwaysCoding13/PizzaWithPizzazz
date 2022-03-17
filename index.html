@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza With Pizzazz</title>
+    <link href="css/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="screen">
+        <div id="left-column">
+           <p id="customer-id">Customer #:</p>
+           <div id="pizza-size">
+            <h3 id="pizza-size-label">How hungry are you feeling?</h3>
+            <form>
+                <input type="radio" id="small-pizza" name="pizza-size" value="Small">
+                <label for="small">Small - $10</label><br>
+                <input type="radio" id="medium-pizza" name="pizza-size" value="Medium">
+                <label for="medium">Medium - $13</label><br>
+                <input type="radio" id="large-pizza" name="pizza-size" value="Large">
+                <label for="large">Large - $17</label><br>
+                <input type="radio" id="extra-large-pizza" name="pizza-size" value="Exxtra Large">
+                <label for="extra-large">Exxtra-Large - $20</label><br> 
+            </form>
+            <div id="toppings">
+                <h3 id="toppings-label">And to top it off?</h3>
+                <form>
+                    <input type="checkbox" id="peperoni" name="toppings" value="Peperoni">
+                    <label for="peperoni">Peperoni - $2</label><br>
+                    <input type="checkbox" id="mushroom" name="toppings" value="Mushroom">
+                    <label for="mushroom">Mushroom - $1.50</label><br>
+                    <input type="checkbox" id="extra-cheese" name="toppings" value="Exxtra Cheese">
+                    <label for="extra-cheese">Exxtra Cheese - $1</label><br>               
+                    <input type="checkbox" id="sausage" name="toppings" value="Sausage">
+                    <label for="sausage">Sausage - $2</label><br>
+                    <input type="checkbox" id="onion" name="toppings" value="Onion">
+                    <label for="onion">Onion - $1.50</label><br>
+                    <input type="checkbox" id="black-olives" name="toppings" value="Black Olives">
+                    <label for="black-olives">Black Olives - $1.50</label><br>
+                    <input type="checkbox" id="green-peppers" name="toppings" value="Green Peppers">
+                    <label for="green-peppers">Green Peppers - $1</label><br>
+                    <input type="checkbox" id="fresh-garlic" name="toppings" value="Fresh Garlic">
+                    <label for="fresh-garlic">Fresh Garlic - $2</label><br>
+                    <input type="checkbox" id="tomato" name="toppings" value="Tomato">
+                    <label for="tomato">Tomato - $1</label><br>
+                    <input type="checkbox" id="fresh-basil" name="toppings" value="Fresh Basil">
+                    <label for="fresh-basil">Fresh Basil - $3</label>
+    
+                </form>
+            </div>
+           </div> 
+        </div>
+        <div id="middle-column">
+            <div id="recipt-screen">
+                <h1>Pizza with Pizzazz</h1>
+                <p id="recipt"></p>
+            </div>
+            <button onclick="printRecipt()" id="order">Click here for a delicous meal!</button> 
+        </div>
+        <div id="right-column">
+            <h3 id="drinks-label">Something to wash it down?</h3>
+            <div id="drink-menu">                
+                <label for="drinks">Drinks</label>
+                <select name="drinks" id="drinks">
+                    <option value="Coke">Coke</option>
+                    <option value="Sprite">Sprite</option>
+                    <option value="Powerade">Powerade</option>
+                    <option value="Mountain Dew">Mountain Dew</option>
+                    <option value="Desani">Desani</option>
+                </select><br>
+                <label for="drink-size">Size</label>
+                <select name="drink-size" id="drink-size">
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="Extra Large">Exxtra Large</option>
+                </select>
+            </div>
+            <div id="customer-info">
+                <h3 id="customer-info-label">Who are you and where do we bring this pizza?!</h3>
+                <div id="customer-info-forms">
+                    <form>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="address">Address</label><br>
+                        <input type="text" id="address" name="address"><br>
+                        <label for="city-state">City & State</label><br>
+                        <input type="text" id="city-state" name="city-state"><br>
+                        <label for="zip">Zip</label><br>
+                        <input type="text" id="zip" name="zip"><br>
+                        <label for="phone">Phone</label><br>
+                        <input type="text" id="phone" name="phone">
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

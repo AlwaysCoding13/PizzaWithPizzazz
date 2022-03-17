@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Pacifico&display=swap');
+body{
+    background-image: url(https://images.freeimages.com/images/large-previews/8eb/brick-wall-1175940.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#screen{
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+    border: 1px;
+    border-radius: 5px;
+    height: 700px;
+    margin-top: 100px;
+    background-color: rgba(110, 116, 116, 0.952);
+    font-family: 'Fredoka', sans-serif;
+}
+
+#left-column{
+    display: grid;
+    grid-template-rows: 10% 25% 65%;
+    margin-left: 10px;;
+}
+
+
+#customer-id{
+    color:white;
+    font-size: larger;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 100px;
+}
+
+#pizza-size-label{
+    font-family: 'Pacifico', cursive;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#toppings-label{
+    font-family: 'Pacifico', cursive;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+#recipt-screen{
+    text-align: center;
+    border: 2px solid black;
+    height: 600px;
+}
+
+#recipt-screen h1{
+    font-family: 'Pacifico', cursive;  
+}
+
+#order{
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 1100px;
+    height: 50px;
+    background-color: rgb(129, 34, 34);
+    font-size: 25px;
+    font-family: 'Fredoka', sans-serif;
+    border: 1px;
+    border-radius: 5px;;
+}
+
+#order:active{
+    transform: scale(.95);
+}
+
+#drink-menu{
+    margin-left: 100px;
+}
+
+#drinks-label{
+    text-align: center;
+    font-family: 'Pacifico', cursive; 
+}
+
+#drink-size{
+    margin-top: 25px;
+    margin-left: 16px;
+}
+
+#customer-info{
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+#customer-info-label{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+#customer-info-forms{
+    margin-left: 80px;
+}
+
+#recipt{
+    font-size: 20px;
+}
+
+
