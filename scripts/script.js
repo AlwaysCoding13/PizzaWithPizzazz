@@ -11,6 +11,7 @@ let address = document.getElementById("address");
 let cityState = document.getElementById("city-state");
 let zip = document.getElementById("zip");
 let phone = document.getElementById("phone");
+let total = 0;
 
 
 
@@ -25,19 +26,34 @@ function printRecipt(){
     for (let index = 0; index < pizzaSizes.length; index++) {
         if(pizzaSizes[index].checked){
             sizeSelection = pizzaSizes[index].value;
+            switch(pizzaSizes[index].value){
+                case "Small":
+                    total += 10;
+                    break;
+                case "Medium":
+                    total += 13;
+                    break;
+                case "Large":
+                    total += 13;
+                    break;
+                case "Medium":
+                    total += 13;
+                    break;
+            }
         }        
     }
     for (let index = 0; index < toppings.length; index++) {
         if(toppings[index].checked){
-            toppingsSelection += `${toppings[index].value}\n`;
+            toppingsSelection += `\n${toppings[index].value}`;
         }        
     }
     if(fullName.value == "" || address.value == "" || cityState.value == "" || zip.value == "" || phone.value == ""){
         alert("No pizza for you fields not entered correctly");
         recipt.innerText = "";
     }
-    else{
-           recipt.innerText += `${customerID.innerText}\n`;
+    else{           
+            alert(total.innerText);        
+            recipt.innerText += `${customerID.innerText}\n`;
             recipt.innerText += `Size: ${sizeSelection}\n`;
             recipt.innerText += `Toppings:\n${toppingsSelection}\n`;
             recipt.innerText += `Drink Selection:\n${drinks.value}\n${drinkSize.value}\n`;
